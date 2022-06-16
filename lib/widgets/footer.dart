@@ -24,10 +24,17 @@ class Footer extends StatelessWidget {
           children: [
             Column(
               children: [
-                const Icon(
-                  Ionicons.logo_linkedin,
-                  size: 40,
-                  color: Colors.white,
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Container(
+                    color: SlidekoColor.cardColor,
+                    padding: const EdgeInsets.all(16),
+                    child: const Icon(
+                      Ionicons.logo_linkedin,
+                      size: 40,
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 20),
                 Text(
@@ -40,13 +47,20 @@ class Footer extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(width: 30),
+            const SizedBox(width: 70),
             Column(
               children: [
-                const Icon(
-                  Ionicons.logo_instagram,
-                  size: 40,
-                  color: Colors.white,
+                Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: SlidekoColor.cardColor,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: const Icon(
+                    Ionicons.logo_instagram,
+                    size: 40,
+                    color: Colors.white,
+                  ),
                 ),
                 const SizedBox(height: 20),
                 Text(
@@ -59,13 +73,20 @@ class Footer extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(width: 30),
+            const SizedBox(width: 70),
             Column(
               children: [
-                const Icon(
-                  Ionicons.logo_pinterest,
-                  size: 40,
-                  color: Colors.white,
+                Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: SlidekoColor.cardColor,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: const Icon(
+                    Ionicons.logo_pinterest,
+                    size: 40,
+                    color: Colors.white,
+                  ),
                 ),
                 const SizedBox(height: 20),
                 Text(
